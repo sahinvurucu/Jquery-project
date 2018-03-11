@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+    padding: 200px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;    
+}
+  
+div{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+button {
+    position: relative;
+    background-color: rgb(150, 150, 150);
+    border: none;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 14px;
+    border-color: black;    
+}
+
+button:after {
+    content: "";
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+  #hidden {
+    display: none;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 5px grey;
+}
+  
+  #removeThis {
+    margin: 20px;
+    padding: 20px;
+
+}
